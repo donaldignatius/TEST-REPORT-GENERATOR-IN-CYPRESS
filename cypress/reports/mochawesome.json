@@ -1,0 +1,220 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-23T23:10:49.533Z",
+    "end": "2023-10-23T23:11:06.998Z",
+    "duration": 17465,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2cb8487c-20ec-45dc-a3e9-938490309523",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login_feature.cy.js",
+      "file": "cypress\\e2e\\login_feature.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "79f2158c-82d5-4ff0-91af-913f49c55eec",
+          "title": "positive and negative login scenarios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login with empty username and password fields",
+              "fullTitle": "positive and negative login scenarios login with empty username and password fields",
+              "timedOut": null,
+              "duration": 4637,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('loginFeature').then(data => {\n  login.clickLoginEmptyFields();\n});",
+              "err": {},
+              "uuid": "bb107239-0097-48c8-86f7-686ebe1fe06a",
+              "parentUUID": "79f2158c-82d5-4ff0-91af-913f49c55eec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login with valid username and empty password",
+              "fullTitle": "positive and negative login scenarios login with valid username and empty password",
+              "timedOut": null,
+              "duration": 1311,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('loginFeature').then(data => {\n  login.enterUsername(data.usernameValid);\n  login.clickLoginEmptyPassword();\n});",
+              "err": {},
+              "uuid": "dab4c3fe-4131-4fb7-8ea9-911b3fd8deb7",
+              "parentUUID": "79f2158c-82d5-4ff0-91af-913f49c55eec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login with valid password and empty username",
+              "fullTitle": "positive and negative login scenarios login with valid password and empty username",
+              "timedOut": null,
+              "duration": 946,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('loginFeature').then(data => {\n  login.enterPassword(data.passwordValid);\n  login.clickLoginEmptyUsername();\n});",
+              "err": {},
+              "uuid": "1f8ec5a1-1949-45ef-8980-4924ceaa6040",
+              "parentUUID": "79f2158c-82d5-4ff0-91af-913f49c55eec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login with valid username and invalid password",
+              "fullTitle": "positive and negative login scenarios login with valid username and invalid password",
+              "timedOut": null,
+              "duration": 1384,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('loginFeature').then(data => {\n  login.enterUsername(data.usernameValid);\n  login.enterPassword(data.passwordInvalid);\n  login.clickLoginInvalidCredentials();\n});",
+              "err": {},
+              "uuid": "1f95e9a4-b390-4a47-9078-899838c5e2c2",
+              "parentUUID": "79f2158c-82d5-4ff0-91af-913f49c55eec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login with invalid username and valid password",
+              "fullTitle": "positive and negative login scenarios login with invalid username and valid password",
+              "timedOut": null,
+              "duration": 1387,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('loginFeature').then(data => {\n  login.enterUsername(data.usernameInvalid);\n  login.enterPassword(data.passwordValid);\n  login.clickLoginInvalidCredentials();\n});",
+              "err": {},
+              "uuid": "ab4ebae2-7f48-4a1d-a68f-e01edc91f488",
+              "parentUUID": "79f2158c-82d5-4ff0-91af-913f49c55eec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login with invalid username and password",
+              "fullTitle": "positive and negative login scenarios login with invalid username and password",
+              "timedOut": null,
+              "duration": 1314,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('loginFeature').then(data => {\n  login.enterUsername(data.usernameInvalid);\n  login.enterPassword(data.passwordInvalid);\n  login.clickLoginInvalidCredentials();\n});",
+              "err": {},
+              "uuid": "41d9a799-e188-4050-9c75-f49b1296caca",
+              "parentUUID": "79f2158c-82d5-4ff0-91af-913f49c55eec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login with valid credentials",
+              "fullTitle": "positive and negative login scenarios login with valid credentials",
+              "timedOut": null,
+              "duration": 2123,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('loginFeature').then(data => {\n  login.enterUsername(data.usernameValid);\n  login.enterPassword(data.passwordValid);\n  login.clickLoginValid();\n});",
+              "err": {},
+              "uuid": "ce24103f-4b33-4b8b-b6fd-db5fb22bd3c7",
+              "parentUUID": "79f2158c-82d5-4ff0-91af-913f49c55eec",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bb107239-0097-48c8-86f7-686ebe1fe06a",
+            "dab4c3fe-4131-4fb7-8ea9-911b3fd8deb7",
+            "1f8ec5a1-1949-45ef-8980-4924ceaa6040",
+            "1f95e9a4-b390-4a47-9078-899838c5e2c2",
+            "ab4ebae2-7f48-4a1d-a68f-e01edc91f488",
+            "41d9a799-e188-4050-9c75-f49b1296caca",
+            "ce24103f-4b33-4b8b-b6fd-db5fb22bd3c7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13102,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "Html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

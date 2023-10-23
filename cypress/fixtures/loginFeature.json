@@ -1,0 +1,8 @@
+{
+
+    "usernameValid" : "standard_user",
+    "usernameInvalid" : "educationer",
+    "passwordValid" : "secret_sauce",
+    "passwordInvalid" : "don_user"
+    
+    }
